@@ -1,18 +1,18 @@
 package com.tdd;
 
 public class CountOff {
-    public String Say(int i) {
-        if (isDivided(i, 3)) {
+    public String Say(int studentNo) {
+        if (isDivided(studentNo, 3)) {
             return "Fizz";
         }
-        if (isDivided(i, 5)) {
+        if (isDivided(studentNo, 5)) {
             return "Buzz";
         }
-        if (isDivided(i, 7)) {
+        if (isDivided(studentNo, 7)) {
             return "Whizz";
         }
 
-        return String.valueOf(i);
+        return String.valueOf(studentNo);
     }
 
     private boolean isDivided(int studentNo, int multiple) {
