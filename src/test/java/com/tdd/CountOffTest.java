@@ -34,4 +34,10 @@ public class CountOffTest {
         CountOff countoff = new CountOff();
         assertThat("BuzzWhizz").isEqualTo(countoff.Say(35));
     }
+
+    @Test
+    public void should_say_FizzWhizz_when_count_off_given_student_NO_is_21() {
+        CountOff countoff = new CountOff();
+        assertThat("FizzWhizz").isEqualTo(countoff.Say(21));
+    }
 }
