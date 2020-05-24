@@ -10,7 +10,7 @@ public class CountOff {
             sayString += "Buzz";
         }
         if (isDivided(studentNo, 7)) {
-            return "Whizz";
+            sayString += "Whizz";
         }
 
         if (!sayString.equals("")) {
