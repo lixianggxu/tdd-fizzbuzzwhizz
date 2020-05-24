@@ -2,17 +2,22 @@ package com.tdd;
 
 public class CountOff {
     public String Say(int studentNo) {
+        String sayString = "";
         if (isDivided(studentNo, 3)) {
-            return "Fizz";
+            sayString += "Fizz";
         }
         if (isDivided(studentNo, 5)) {
-            return "Buzz";
+            sayString += "Buzz";
         }
         if (isDivided(studentNo, 7)) {
             return "Whizz";
         }
 
-        return String.valueOf(studentNo);
+        if (!sayString.equals("")) {
+            return sayString;
+        } else {
+            return String.valueOf(studentNo);
+        }
     }
 
     private boolean isDivided(int studentNo, int multiple) {
