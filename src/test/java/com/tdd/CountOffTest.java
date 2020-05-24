@@ -16,4 +16,10 @@ public class CountOffTest {
         CountOff countoff = new CountOff();
         assertThat("Buzz").isEqualTo(countoff.Say(5));
     }
+
+    @Test
+    public void should_say_Whizz_when_count_off_given_student_NO_is_7() {
+        CountOff countoff = new CountOff();
+        assertThat("Whizz").isEqualTo(countoff.Say(7));
+    }
 }
